@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+overflow: hidden;
+}
+html{
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right top, #425d07, #4b7e00, #4ea000, #44c500, #12eb15);
+    background-repeat: no-repeat;
+
+}
+
+.bgtext {
+    position: relative;
+}
+
+.bgtext:before {
+    margin: 3rem;
+    content: "Body";
+    position: absolute;   
+    color: rgb(187, 182, 182);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    font-size: 15rem;
+}
+.container1:before {
+    margin: 15rem;
+    content: "  Mass";
+    position: absolute;   
+    color: rgb(187, 182, 182);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    font-size: 15rem;
+}
+.container2:before {
+    margin: 27rem;
+    content: "  Index";
+    position: absolute;   
+    color: rgb(187, 182, 182);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    font-size: 15rem;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: fit-content;
+    height:fit-content;
+
+}
+h2{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+input{
+    border: none;
+    border-bottom: solid 3px black;
+    padding-top:20px ;
+    font-size: 3rem;
+     width: 400px;
+     color:black;
+     background-color: transparent;
+     text-align: center;
+}
+button{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+@media screen and (max-width:1022px){
+   .bgtext:before{
+    margin-left: 1rem;
+   }
+   .container1:before{
+    margin-left: 1rem;
+}
+ .container2:before{
+    margin-left: 1rem;
+}
+
+    }
